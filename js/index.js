@@ -107,38 +107,58 @@ const headerImg = sectionOne.querySelector("img");
 headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // main-content
-const sectionTwo = document.querySelector('.text-content');
-const featuresHead = sectionTwo.querySelector('h4');
+
+const featuresBlock = document.querySelector('.text-content:nth-of-type(1)');
+const featuresHead = featuresBlock.querySelector('h4');
 featuresHead.textContent = siteContent['main-content']['features-h4'];
 
-const featuresBody = sectionTwo.querySelector('p');
+const featuresBody = featuresBlock.querySelector('p');
 featuresBody.textContent = siteContent['main-content']['features-content'];
 
-const contentBlock2 = sectionTwo.nextElementSibling;
-const aboutHead = contentBlock2.querySelector('h4');
+const aboutBlock = document.querySelector('.text-content:nth-of-type(2)');
+const aboutHead = aboutBlock.querySelector('h4');
 aboutHead.textContent = siteContent['main-content']['about-h4'];
 
-const aboutBody = contentBlock2.querySelector('p');
+const aboutBody = aboutBlock.querySelector('p');
 aboutBody.textContent = siteContent['main-content']['about-content'];
 
 const mainImg = document.querySelector('.main-content');
 const midImage = mainImg.querySelector("img");
 midImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
-const sectionThree = document.querySelector('.bottom-content');
-const servicesHead = sectionThree.querySelector('h4');
+
+
+const servicesBlock = document.querySelector('.bottom-content .text-content:nth-of-type(1)');
+const servicesHead = servicesBlock.querySelector('h4');
 servicesHead.textContent = siteContent['main-content']['services-h4'];
 
-const servicesBody = sectionThree.querySelector('p');
+const servicesBody = servicesBlock.querySelector('p');
 servicesBody.textContent = siteContent['main-content']['services-content'];
 
+const productBlock = document.querySelector('.bottom-content .text-content:nth-of-type(2)');
+const productHead = productBlock.querySelector('h4');
+productHead.textContent = siteContent['main-content']['product-h4'];
 
-// const sectionFour = document.querySelector('.bottom-content', 'text-content');
-// const servicesHead = sectionFour.querySelector('h4');
+const productBody = productBlock.querySelector('p');
+productBody.textContent = siteContent['main-content']['product-content'];
+
+const visionBlock = document.querySelector('.bottom-content .text-content:nth-of-type(3)');
+const visionHead = visionBlock.querySelector('h4');
+visionHead.textContent = siteContent['main-content']['product-h4'];
+
+const visionBody = visionBlock.querySelector('p');
+visionBody.textContent = siteContent['main-content']['product-content'];
+
+
+
+// const servicesBlock = document.querySelector('.bottom-content', 'text-content');
+// const servicesHead = servicesBlock.querySelector('h4');
 // servicesHead.textContent = siteContent['main-content']['services-h4'];
 
-// const servicesBody = sectionFour.querySelector('p');
+// const servicesBody = servicesBlock.querySelector('p');
 // servicesBody.textContent = siteContent['main-content']['services-content'];
+
+
 
 
 // const contentBlock3 = sectionThree.;
