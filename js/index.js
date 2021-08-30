@@ -75,6 +75,26 @@ navText4.textContent = siteContent['nav']['nav-item-4'];
 navText5.textContent = siteContent['nav']['nav-item-5'];
 navText6.textContent = siteContent['nav']['nav-item-6'];
 
+navText1.style.color = "green";
+navText2.style.color = "green";
+navText3.style.color = "green";
+navText4.style.color = "green";
+navText5.style.color = "green";
+navText6.style.color = "green";
+
+const navText7 = document.createElement('a');
+navText7.textContent = 'News'
+navText7.href = '#';
+document.querySelector('nav').appendChild(navText7);
+
+const navText8 = document.createElement('a');
+navText8.textContent = 'Blog'
+navText8.href = '#';
+document.querySelector('nav').prepend(navText8);
+
+navText7.style.color = "green";
+navText8.style.color = "green";
+
 // header
 const sectionOne = document.querySelector('.cta');
 const titleSectionOne = sectionOne.querySelector('h1');
